@@ -2,7 +2,6 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import Layout from "./components/Layout/Layout";
 import Login from "./components/Login/Login";
-import Admin from "./components/Admin/Admin";
 import SearchPage from "./pages/SearchPage.jsx/SearchPage";
 import Private from "./routes/Private";
 import Hidden from "./routes/Hidden";
