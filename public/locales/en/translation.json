@@ -1,0 +1,18 @@
+{
+  "Welcome to React": "Welcome to React",
+  "Search": "Search",
+  "Home": "Home",
+  "Logout": "Logout",
+  "select": "select",
+  "Something went wrong! try again later": "Something went wrong! try again later",
+  "Username": "Username",
+  "Password": "Password",
+  "Invalid username or password": "Invalid username or password",
+  "Prev": "Prev",
+  "Next": "Next",
+  "No results found": "No results found",
+  "Language": "Language",
+  "Go to repository": "Go to repository",
+  "see profile": "see profile"
+
+}

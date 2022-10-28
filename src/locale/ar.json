@@ -1,0 +1,16 @@
+{
+  "Search": "بحث",
+  "Home": "الصفحة الرئيسية",
+  "Logout": "تسجيل خروج",
+  "select...": "اختر",
+  "Something went wrong! try again later": "يرجي المحاولة لاحقاَ",
+  "Login": "تسجيل دخول",
+  "Username": "اسم المستخدم",
+  "Password": "كلمة المرور",
+  "Invalid username or password": "اسم المستخدم أو كلمة المرور غير صالحة",
+  "Prev": "السابق",
+  "Next": "التالي",
+  "No results found": "لا يوجد نتائج",
+  "Language": "اللغة",
+  "Go to repository": "اذهب للمستودع"
+}
