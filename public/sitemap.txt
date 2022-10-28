@@ -1,0 +1,4 @@
+https://github-api-react-2022.netlify.app/
+https://github-api-react-2022.netlify.app/login
+https://github-api-react-2022.netlify.app/home
+https://github-api-react-2022.netlify.app/search
