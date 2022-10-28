@@ -59,6 +59,8 @@ const Login = () => {
         canonical="/login"
         meta={{ name: "description", content: "Login to GitHub API account" }}
       />
+
+    
       <Row>
         <Col
           sm={8}
@@ -77,6 +79,7 @@ const Login = () => {
                 className="form-control"
                 onChange={onInputChange}
                 value={username}
+                placeholder='Username is efat'
               />
             </FormGroup>
             <FormGroup className="form-group mb-3">
@@ -88,6 +91,7 @@ const Login = () => {
                 className="form-control"
                 onChange={onInputChange}
                 value={password}
+                placeholder='Password is 1234'
               />
             </FormGroup>
 
