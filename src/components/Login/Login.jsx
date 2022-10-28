@@ -12,9 +12,8 @@ import {
   Row,
 } from "react-bootstrap";
 import Message from "../UIElements/Message";
-import { useTranslation } from 'react-i18next';
-
-
+import { useTranslation } from "react-i18next";
+import Meta from "./../Meta";
 
 const Login = () => {
   const [t] = useTranslation();
@@ -54,44 +53,54 @@ const Login = () => {
   };
 
   return (
-   
-    <Row>
-      <Col sm={8} md={6} lg={4} className='offset-sm-2 offset-md-3 offset-lg-4'>
-        <Form onSubmit={onSubmit}>
-          <h2 className="text-center mb-4">{t("Login")}</h2>
-          <FormGroup className="form-group mb-3">
-            <FormLabel htmlFor="username">{t("Username")}</FormLabel>
-            <FormControl
-              type="text"
-              name="username"
-              id="username"
-              className="form-control"
-              onChange={onInputChange}
-              value={username}
-            />
-          </FormGroup>
-          <FormGroup className="form-group mb-3">
-            <FormLabel htmlFor="password">{t("Password")}</FormLabel>
-            <FormControl
-              type="password"
-              name="password"
-              id="password"
-              className="form-control"
-              onChange={onInputChange}
-              value={password}
-            />
-          </FormGroup>
+    <>
+      <Meta
+        title="Login"
+        canonical="/login"
+        meta={{ name: "description", content: "Login to GitHub API account" }}
+      />
+      <Row>
+        <Col
+          sm={8}
+          md={6}
+          lg={4}
+          className="offset-sm-2 offset-md-3 offset-lg-4"
+        >
+          <Form onSubmit={onSubmit}>
+            <h2 className="text-center mb-4">{t("Login")}</h2>
+            <FormGroup className="form-group mb-3">
+              <FormLabel htmlFor="username">{t("Username")}</FormLabel>
+              <FormControl
+                type="text"
+                name="username"
+                id="username"
+                className="form-control"
+                onChange={onInputChange}
+                value={username}
+              />
+            </FormGroup>
+            <FormGroup className="form-group mb-3">
+              <FormLabel htmlFor="password">{t("Password")}</FormLabel>
+              <FormControl
+                type="password"
+                name="password"
+                id="password"
+                className="form-control"
+                onChange={onInputChange}
+                value={password}
+              />
+            </FormGroup>
 
-          <div className="d-grid mt-4 mb-2">
-            <Button type="submit" className="btn btn-success">
-              {t("Login")}
-            </Button>
-          </div>
-        </Form>
-        {error && <Message msg={error} />}
-      </Col>
-     
-    </Row>
+            <div className="d-grid mt-4 mb-2">
+              <Button type="submit" className="btn btn-success">
+                {t("Login")}
+              </Button>
+            </div>
+          </Form>
+          {error && <Message msg={error} />}
+        </Col>
+      </Row>
+    </>
   );
 };
 

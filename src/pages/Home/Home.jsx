@@ -7,6 +7,7 @@ import Message from "./../../components/UIElements/Message";
 import { Col, Row } from "react-bootstrap";
 import Paginate from "../../components/UIElements/Paginate";
 import { useTranslation } from 'react-i18next';
+import Meta from "../../components/Meta";
 
 const Home = () => {
   const [t]= useTranslation();
@@ -36,6 +37,7 @@ const Home = () => {
     <h2 className="text-center">{t("No results found")}</h2>
   ) : (
     <>
+      <Meta title='HomePage' canonical='/home' />
       <List items={data.items} />
 
       <Paginate
